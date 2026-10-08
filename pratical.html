@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information Request Form</title>
+  <link rel="stylesheet" href="practical.css">
+</head>
+<body>
+  <main class="page">
+    <div class="top-accent"></div>
+
+    <header class="header">
+      <h1>Information<br>Request Form</h1>
+
+      <div class="company-logo" aria-label="Louie VanHoussen Corporations">
+        <div class="lv-mark">LV</div>
+        <div class="company-name">
+          <strong>LOUIE VANHOUSSEN</strong>
+          <span>CORPORATIONS</span>
+        </div>
+      </div>
+    </header>
+
+    <form>
+      <section class="requester-grid">
+        <div class="field date-field">
+          <label for="date">Date</label>
+          <div class="input-wrap">
+            <input id="date" type="date">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="requester">Name of<br>Requester</label>
+          <input id="requester" type="text">
+        </div>
+
+        <div class="field">
+          <label for="department">Department</label>
+          <input id="department" type="text">
+        </div>
+
+        <div class="field">
+          <label for="email">Email<br>Address</label>
+          <input id="email" type="email">
+        </div>
+
+        <div class="field">
+          <label for="contact">Contact<br>Number</label>
+          <input id="contact" type="tel">
+        </div>
+      </section>
+
+      <section class="information-section">
+        <h2>Information Requested</h2>
+
+        <div class="info-grid">
+          <div class="field">
+            <label for="type">Type of<br>Information<br>Needed</label>
+            <input id="type" type="text">
+          </div>
+
+          <div class="field">
+            <label for="purpose">Purpose of<br>Request</label>
+            <input id="purpose" type="text">
+          </div>
+        </div>
+
+        <div class="satisfaction">
+          <p>What aspect of service did you find most satisfactory?</p>
+
+          <div class="options">
+            <label class="radio-option">
+              <input type="radio" name="service" value="pdf">
+              <span>PDF</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="service" value="word">
+              <span>Word<br>Document</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="service" value="excel">
+              <span>Excel<br>Spreadsheet</span>
+            </label>
+
+            <label class="radio-option other-option">
+              <input type="radio" name="service" value="other">
+              <span>Other:</span>
+              <input type="text" aria-label="Other service">
+            </label>
+          </div>
+        </div>
+
+        <div class="details">
+          <label for="details">
+            Additional Details
+            <span>(Please provide any specific details, keywords, or context to help process<br class="desktop"> your request efficiently.)</span>
+          </label>
+          <textarea id="details"></textarea>
+        </div>
+      </section>
+
+      <section class="approval-section">
+        <h2>Authorization & Approval</h2>
+
+        <div class="approval-grid">
+          <div class="approval-fields">
+            <div class="field">
+              <label for="approved">Approved by</label>
+              <input id="approved" type="text">
+            </div>
+
+            <div class="field">
+              <label for="signed">Date Signed</label>
+              <div class="input-wrap">
+                <input id="signed" type="date">
+              </div>
+            </div>
+          </div>
+
+          <textarea class="signature-box" aria-label="Approval signature or comments"></textarea>
+        </div>
+      </section>
+    </form>
+
+    <div class="bottom-accent"></div>
+  </main>
+</body>
+</html>

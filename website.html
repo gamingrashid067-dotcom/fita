@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        font-family: Arial, sans-serif;
+        background-color:aliceblue;
+        padding: 28px 58px;
+    }
+    .site-header{
+        height: 125px;
+        width: 100px;
+        background: white;
+        border:2px solid azure;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 35px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+    /* Logo */
+.logo {
+    background: #0875e1;
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    padding: 17px 30px;
+    border-radius: 16px;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+    margin-left: auto;
+    margin-right: 70px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #252b35;
+
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: dodgerblue;
+}
+
+/* Get Started button */
+.get-started {
+    border: none;
+    background: dodgerblue;
+    color: white;
+
+    font-size: 23px;
+    font-weight: bold;
+
+    padding: 20px 52px;
+    border-radius: 17px;
+
+    cursor: pointer;
+}
+
+.get-started:hover {
+    background:dodgerblue;
+}
+
+
+</style>
+
+<body>
+    <header>
+        <nav class="site-header">
+        <div class="logo">LOGO</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+        </div>
+    </header>    
+    <button clss="get-started">Get started</button>
+    </nav>
+
+</body>
+</html>
